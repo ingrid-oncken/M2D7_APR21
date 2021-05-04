@@ -104,8 +104,20 @@
       }
 
       /* EX8) Write a selector to target the second post author */
-      main blog-main .blog-post:nth-of-type() {
-        background-color: #d8f1a0;
+      /* div + div.blog-post:first-of-type */
+      .blog-post:nth-child(3) {
+        background-color: #d7f1a04d;
+      }
+
+      /* EX9) Write a selector to target the "back to top" link     
+      #### EXTRA Try doing it without targeting the footer element directly */
+      .blog-footer p:last-child a {
+        background-color: rgb(248, 145, 235);
+      }
+
+      /* EX10) Write a selector to target the footer */
+      .blog-footer {
+        background-color: rgba(222, 206, 135, 0.425);
       }
     </style>
     <link
@@ -492,6 +504,11 @@
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
+      // EX11) Write a function to add a new link into the navbar
+      const addLink = function(link) {
+        const grab
+
+      }
     </script>
   </body>
 </html>
