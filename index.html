@@ -98,7 +98,7 @@
       }
 
       /* EX7) Write a selector to target all the li into the first ordered-list in the sidebar ( Archives ) */
-      aside div:nth-child(2) ol li {
+      div:nth-child(2) ol li {
         color: #f3c178;
         background-color: aquamarine;
       }
@@ -505,10 +505,17 @@
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
     */
       // EX11) Write a function to add a new link into the navbar
-      const addLink = function(link) {
-        const grab
+      const addLink = function (link) {
+        //grab the nav 1st
+        const grabNav = document.querySelector(".nav");
 
-      }
+        //create the link
+        const aLink = document.createElement("a");
+
+        //adding the new created link to the nav
+        grabNav.appendChild(link);
+      };
+      addLink("the new link");
     </script>
   </body>
 </html>
